@@ -54,7 +54,7 @@ def new_task():
         new_id=c.lastrowid
         conn.commit()
         c.close()
-        return '<p>成功添加数据，ID为：%s</p>'% new_id
+        return '<p>成功添加数据，ID为：%s</p>'% new_id,template('new_task.tpl')
     else:
         return template('new_task.tpl')
 
