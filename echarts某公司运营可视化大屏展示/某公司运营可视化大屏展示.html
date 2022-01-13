@@ -1,0 +1,317 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>数据可视化课程汇报</title>
+<!--设置是否为缩放模式 -->
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<!-- 新 Bootstrap 核心 CSS 文件 --> 
+<link rel="stylesheet" type="text/css" href="https://apps.bdimg.com/libs/bootstrap/3.3.4/css/bootstrap.css">
+<!-- jQuery文件。务必在bootstrap.min.js 之前引入 --> 
+<script src="js/jquery.min.js"></script>
+<!-- 最新的 Bootstrap 核心 JavaScript 文件 --> 
+<script src="js/bootstrap.min.js"></script>
+<!--echarts JS-->
+<script src="js/echarts.min.js"></script>
+<!-- 轮播swiper文件 -->
+<link rel="stylesheet" type="text/css" href="css/swiper.min.css">
+<script src="js/swiper.min.js"></script>
+<!--界面样式-->
+<script src="js/visual.js"></script>
+<script src="js/china.js"></script>
+<script src="js/chartMap.js"></script>
+<link rel="stylesheet" type="text/css" href="css/visual.css">
+<!-- 图表主题配色 -->
+<script src="js/hicgtheme.js"></script>
+
+</head>
+<body class="ksh">
+	<div id="load">
+		<div class="load_img"><!-- 加载动画 -->
+			<img class="jzxz1" src="images/jzxz1.png">
+			<img class="jzxz2" src="images/jzxz2.png">
+		</div>
+	</div>
+	
+	<body>
+
+        <!-- <p><a href="Nothing.html"><h3 style="font-style:italic;color:purple;float: left;width: 10%;"></h3></a></p>
+        <p><a href="Tongxun.html"><h3 style="font-style:italic;color:aliceblue;float: left;width: 20%;">通讯数据</h3></a></p>
+        <p><a href="Jiaotong.html"><h3 style="font-style:italic;color:aliceblue;float: left;width: 20%;">交通数据</h3></a></p>
+        <p><a href="Fengxi.html"><h3 style="font-style:italic;color:aliceblue;float: right;width: 50%;">综合分析</h3></a></p> -->
+
+
+
+	
+	</div>
+	<div class="visual">
+		<div class="visual_left">
+			<div class="visual_box">
+				<div class="visual_title">
+					<span>某关注领域行业规模增速</span>
+					<img src="images/ksh33.png">
+				</div>
+				<div class="visual_chart" id="main1">
+					
+				</div>
+			</div>
+			<div class="visual_box">
+				<div class="visual_title">
+					<span>基金净值规模</span>
+					<img src="images/ksh33.png">
+				</div>
+				<div class="visual_chart" id="main2">
+					
+				</div>
+			</div>
+			<div class="visual_box">
+				<div class="visual_title">
+					<span>行业政策最新动态</span>
+					<img src="images/ksh33.png">
+				</div>
+				<div class="visual_chart sfzcll">
+					<a> </a>
+					<a> </a>
+					<a> </a>
+					<div class="sfzcll_pos_box">
+						<div class="sfzcll_box">
+							<img class="sfzcll_bkJk" src="images/ksh34.png">
+							<img class="sfzcll_bkJk" src="images/ksh34.png">
+							<img class="sfzcll_bkJk" src="images/ksh34.png">
+							<img class="sfzcll_bkJk" src="images/ksh34.png">
+							<label>134号文</label>
+							<div class="sfzcll_smallBk">
+								<div class="ygl">
+									<span>银保监会</span>
+								</div>
+							</div>
+							<div class="sfzcll_smallBk">
+								<div class="ygl">
+									<span>现金价值通道测试</span>
+								</div>
+							</div>
+							<div class="clear"></div>
+						</div>
+						<div class="sfzcll_box">
+							<img class="sfzcll_bkJk" src="images/ksh34.png">
+							<img class="sfzcll_bkJk" src="images/ksh34.png">
+							<img class="sfzcll_bkJk" src="images/ksh34.png">
+							<img class="sfzcll_bkJk" src="images/ksh34.png">
+							<label>19号文</label>
+							<div class="sfzcll_smallBk">
+								<div class="ygl">
+									<span>银保监会</span>
+								</div>
+							</div>
+							<div class="sfzcll_smallBk">
+								<div class="ygl">
+									<span>对标7702B</span>
+								</div>
+							</div>
+							<div class="clear"></div>
+						</div>
+						<div class="sfzcll_box">
+							<img class="sfzcll_bkJk" src="images/ksh34.png">
+							<img class="sfzcll_bkJk" src="images/ksh34.png">
+							<img class="sfzcll_bkJk" src="images/ksh34.png">
+							<img class="sfzcll_bkJk" src="images/ksh34.png">
+							<label>BVI信托</label>
+							<div class="sfzcll_smallBk">
+								<div class="ygl">
+									<span>维京群岛金融局</span>
+								</div>
+							</div>
+							<div class="sfzcll_smallBk">
+								<div class="ygl">
+									<span>进入门槛</span>
+								</div>
+							</div>
+							<div class="clear"></div>
+						</div>
+					</div>
+					
+				</div>
+			</div>
+		</div>
+		<div class="visual_con">
+			<div class="visual_conTop">
+				<div class="visual_conTop_box visual_conTop1">
+					<div>
+						<h3>新增销售额</h3>
+						<p>  60567</p>
+						<div class="conTop_smil">
+						</div>
+					</div>
+				</div>
+				<div class="visual_conTop_box visual_conTop2">
+					<div>
+						<h3>新增应付账款</h3>
+						<p>22071</p>
+						<!-- <div class="conTop_smil">
+							<a class="sz">日环比:<span> +3%</span><i class="fa fa-long-arrow-up"></i></a>
+							<a class="xd">周环比:<span>-2%</span><i class="fa fa-long-arrow-down"></i></a>
+						</div> -->
+					</div>
+				</div>
+				<div class="visual_conTop_box visual_conTop1">
+					<div>
+						<h3>在职员工总数</h3>
+						<p>  992</p>
+						<div class="conTop_smil">
+						</div>
+					</div>
+				</div>
+				<div class="visual_conTop_box visual_conTop2">
+					<div>
+						<h3>新增订单数</h3>
+						<p>7421</p>
+						<!-- <div class="conTop_smil">
+							<a class="sz">日环比:<span>——+3%</span><i class="fa fa-long-arrow-up"></i></a>
+							<a class="xd">周环比:<span>   -2%</span><i class="fa fa-long-arrow-down"></i></a>
+						</div> -->
+					</div>
+				</div>
+				<div class="clear"></div>
+			</div>
+			<div class="visual_conBot">
+				<img class="visual_conBot_l" src="images/ksh42.png">
+				<img class="visual_conBot_2" src="images/ksh43.png">
+				<img class="visual_conBot_3" src="images/ksh44.png">
+				<img class="visual_conBot_4" src="images/ksh45.png">
+				<div class="visual_chart_text">
+					<h1 align="center"><b>投资项目分布地图</b></h1>
+					<h2 align="center">某某数据分析平台</h2>
+				</div>
+				<div class="visual_chart" id="main8"></div>
+				<div class="visual_conBot_bot">
+					<div class="visualSssf_left">
+						<h3>家族企业财务状况诊断</h3>
+						<a style="display:block">关键指标</a>
+						<a>负债率</a>
+						<a>20%</a>
+						<a>毛利润率</a>
+						<a>40%</a>
+						<a>现金流</a>
+						<a>3000万</a>
+					</div>
+					<div class="visualSssf_right">
+						<div class="visualSssf_right_box" id="main5"></div>
+						<div class="visualSssf_right_box" id="main6"></div>
+						<div class="visualSssf_right_box" id="main7"></div>
+					</div>
+					<div class="clear"></div>
+				</div>
+			</div>
+		</div>
+		<div class="visual_right">
+			<div class="visual_box">
+				<div class="visual_title">
+					<span>顾问团队配置</span>
+					<img src="images/ksh33.png">
+				</div>
+				<div class="swiper-container visual_swiper1 visual_chart">
+					<div class="swiper-wrapper">
+						<div class="swiper-slide"  id="main3"></div>
+						<div class="swiper-slide"  id="main31"></div>
+					</div>
+				</div>
+			</div>
+			<div class="visual_box visualSfzsfl">
+				<div class="visual_title">
+					<span>投资标的搜索地图</span>
+					<img src="images/ksh33.png">
+				</div>
+				<div class="visual_chart" id="main9">
+					
+				</div>
+				<div class="visual_table">
+						<table>
+						</table>
+					</div>
+			</div>
+			<div class="visual_box">
+				<div class="visual_title">
+					<span>产业链上下游产能规模图</span>
+					<img src="images/ksh33.png">
+				</div>
+				<div class="swiper-container visual_swiper2 visual_chart">
+					<div class="swiper-wrapper">
+						<div class="swiper-slide"  id="main4"></div>
+						<div class="swiper-slide"  id="main41"></div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="clear"></div>
+	</div>
+	<script type="text/javascript">
+		$(function(){
+			var a=$('.visualSssf_left a')
+			for(var i=0;i<a.length;i++){
+				a[i].index=i;
+				a[i].onclick=function(){
+					for(var i=0;i<a.length;i++){
+						a[i].className=''
+						}
+					this.className='active'
+				}
+			}
+
+			var sfzcllH=$('.sfzcll_box').height()
+			var sfzcllHtwo=sfzcllH-2
+			$('.sfzcll_box').css('line-height',sfzcllH+'px')
+			$('.sfzcll_smallBk>div').css('line-height',sfzcllHtwo+'px')
+
+			//删除加载动画
+			$('#load').fadeOut(1000)
+    		setTimeout(function(){    
+    			$('#load').remove()
+    		}
+    		,1100);
+		})
+
+	//交通流量
+	var tu1 = document.getElementById('main1');
+	var myChart1 = echarts.init(tu1,'hicgtheme');
+    myChart1.setOption(option1);
+	//交通工具流量
+	var myChart2 = echarts.init(document.getElementById('main2'));
+    myChart2.setOption(option2);
+    //本月发生事件
+	var myChart3 = echarts.init(document.getElementById('main3'));
+    myChart3.setOption(option3);
+    var myChart31 = echarts.init(document.getElementById('main31'));
+    myChart31.setOption(option31);
+    var mySwiper1 = new Swiper('.visual_swiper1', {
+		autoplay: true,//可选选项，自动滑动
+		speed:800,//可选选项，滑动速度
+		autoplay: {
+		    delay: 5000,//1秒切换一次
+		  },
+	})
+    //收费站收费排行
+	var myChart4 = echarts.init(document.getElementById('main4'));
+    myChart4.setOption(option4);
+    var myChart41 = echarts.init(document.getElementById('main41'));
+    myChart41.setOption(option41);
+    var mySwiper2 = new Swiper('.visual_swiper2', {
+		autoplay: true,//可选选项，自动滑动
+		direction : 'vertical',//可选选项，滑动方向
+		speed:2000,//可选选项，滑动速度
+	})
+    //今日实时收费
+	var myChart5 = echarts.init(document.getElementById('main5'));
+    myChart5.setOption(option5);
+    var myChart6 = echarts.init(document.getElementById('main6'));
+    myChart6.setOption(option6);
+    var myChart7 = echarts.init(document.getElementById('main7'));
+    myChart7.setOption(option7);
+    //中间地图
+	var myChart8 = echarts.init(document.getElementById('main8'));
+    myChart8.setOption(option8);
+    //收费站收费量
+	var myChart9 = echarts.init(document.getElementById('main9'));
+    myChart9.setOption(option9);
+	</script>
+</body>
+</html>
