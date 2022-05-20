@@ -40,7 +40,7 @@ COOKIES_ENABLED = False
 DEFAULT_REQUEST_HEADERS = {
   'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
   'Accept-Language': 'en',
-  'cookie':'WEIBOCN_FROM=1110003030; SUB=_2A25PgjmqDeRhGeBI71IX9i_FwjuIHXVsjUfirDV6PUJbkdAKLW_8kW1NRp7xVHrdsMGR9eu5QTRPtQDfogQyfcpu; _T_WM=67407663643; MLOGIN=1; XSRF-TOKEN=273c11; M_WEIBOCN_PARAMS=luicode=10000011&lfid=2304136640661997_-_WEIBO_SECOND_PROFILE_WEIBO&fid=2304136640661997_-_WEIBO_SECOND_PROFILE_WEIBO&uicode=10000011; mweibo_short_token=1389147429'
+  'cookie':'填你自己的cookie'
 
 }
 
